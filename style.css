@@ -1,0 +1,161 @@
+html, body {
+  background: #f9f9f9;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  color: #666;
+  font-size: 12px;
+}
+
+::selection {
+  background-color: pink;
+}
+
+a {
+  color: #a78ab9;
+  text-decoration: none;
+}
+
+a:hover:before {
+  content: "[";
+}
+
+a:hover:after {
+  content: "]";
+}
+
+/* Navi */
+
+.navi ul, .navi a,
+.navi a:hover:after, .navi a:before {
+  padding: 0px;
+  margin: 0;
+  color: #888;
+  content: "";
+}
+
+.navi {
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.navi li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.navi li:before {
+  content: "";
+  width: 1%;
+  padding-top: 5px;
+  border-top: 1px solid transparent;
+  display: inline-block;
+  transition: all 0.5s ease-out;
+}
+
+.navi li:after {
+  content: "";
+  width: 1%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  transition: all 0.5s ease-out;
+}
+
+.navi li:hover:before {
+  border-top: 1px solid #cce8f1;
+  width: 70%;
+  transition: all 0.5s ease-out;
+}
+
+.navi li:hover:after {
+  border-bottom: 1px solid #cce8f1;
+  width: 70%;
+  transition: all 0.5s ease-out;
+}
+
+/* Welcome message / About me */
+
+.welcome-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.greeting {
+  text-align: right;
+}
+
+h1 {
+  font-family: 'arial';
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  color: #90ccd2;
+  text-shadow: -3px -3px 0 #f1d87d;
+  margin-bottom: 0;
+  margin-top: 20px;
+  margin-top: 0;
+}
+
+h2 {
+  font-family: 'arial black';
+  font-size: 1.5em;
+  font-style: italic;
+  color: #ffa3a3;
+}
+
+.intro-msg {
+  text-align: justify;
+  margin-top: 0px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #ddd;
+  padding: 30px;
+  line-height: 1.5em;
+}
+
+.intro-msg h2 {
+  text-align: center;
+  border-bottom: 4px double #eee;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.intro-msg img {
+  float:left;
+  width: 80px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  box-shadow: -5px -5px 0 #f1d87d;
+  border: 1.5px solid #ffa3a3;
+}
+
+@media only screen and (min-width: 640px) {
+  .welcome-container {
+    width: 450px;
+    margin: 30px auto;
+    padding: 0px;
+  }
+
+  h1 {
+    font-size: 8em;
+    margin-bottom: 64px;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  .intro-msg {
+    text-align: justify;
+    margin-top: -65px;
+  }
+}
