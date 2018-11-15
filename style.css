@@ -81,7 +81,7 @@ a:hover:after {
   transition: all 0.5s ease-out;
 }
 
-.welcome-container, .contact-container {
+.welcome-container, .contact-container, .project-container {
   width: 85%;
   margin: 0 auto;
 }
@@ -100,6 +100,7 @@ h1 {
   margin-bottom: 0;
   margin-top: 20px;
   margin-top: 0;
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -107,6 +108,7 @@ h2 {
   text-shadow: -2px -2px 0 #f1d87d;
   font-size: 2em;
   color: #ffa3a3;
+  letter-spacing: 1px;
 }
 
 h3 {
@@ -114,6 +116,7 @@ h3 {
   font-family: 'arial black';
   text-shadow: -2px -2px #f1d87d;
   font-size: 1.5em;
+  letter-spacing: 1px;
 }
 
 .intro-msg, .contact-form {
@@ -173,7 +176,7 @@ input[type=text]:focus, textarea:focus {
   border: 1px solid #f1d87d;
 }
 
-input[type="submit"] {
+input[type="submit"], button {
   background-color: #a78ab9;
   border: none;
   padding: 15px;
@@ -186,11 +189,33 @@ input[type="submit"] {
   transition: all 0.5s ease-out;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, button:hover {
   background-color: #f1d87d;
   color: #555;
   box-shadow: 5px 5px #90ccd2;
   transition: all 0.5s ease-out;
+}
+
+.project-container {
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+  display: inline-block;
+  margin: 0px auto 30px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #ddd;
+}
+
+.card img {
+  width: 100%;
+}
+
+.detail {
+  text-align: justify;
 }
 
 @media only screen and (min-width: 640px) {
@@ -225,5 +250,11 @@ input[type="submit"]:hover {
 
   input[name="name"], input[name="email"] {
     width: 45%;
+  }
+
+  .card {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
   }
 }
