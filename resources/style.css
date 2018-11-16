@@ -104,7 +104,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'arial black';
+  font-family: 'arial';
   text-shadow: -2px -2px 0 #f1d87d;
   font-size: 2em;
   color: #ffa3a3;
@@ -113,7 +113,7 @@ h2 {
 
 h3 {
   color: #a78ab9;
-  font-family: 'arial black';
+  font-family: 'arial';
   text-shadow: -2px -2px #f1d87d;
   font-size: 1.5em;
   letter-spacing: 1px;
